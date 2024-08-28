@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Presale</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.1/dist/web3.min.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <h1>Token Presale</h1>
+
+    <button id="connectWallet">Connect MetaMask</button>
+
+    <div id="presaleInfo">
+        <h2>Presale Information</h2>
+        <p id="currentStatus">Status: --</p>
+        <p id="timeRemaining">Time Remaining: --</p>
+    </div>
+
+    <form id="buyETHForm">
+        <h2>Buy with ETH</h2>
+        <label for="ethAmount">Amount (ETH):</label>
+        <input type="number" id="ethAmount" step="any" required>
+        <button type="submit">Buy with ETH</button>
+    </form>
+
+    <form id="buyUSDTForm">
+        <h2>Buy with USDT</h2>
+        <label for="usdtAmount">Amount (USDT):</label>
+        <input type="number" id="usdtAmount" step="any" required>
+        <button type="submit">Buy with USDT</button>
+    </form>
+
+    <form id="buyUSDCForm">
+        <h2>Buy with USDC</h2>
+        <label for="usdcAmount">Amount (USDC):</label>
+        <input type="number" id="usdcAmount" step="any" required>
+        <button type="submit">Buy with USDC</button>
+    </form>
+</body>
+</html>
